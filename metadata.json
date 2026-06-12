@@ -1,0 +1,6 @@
+{
+  "name": "芋研所",
+  "description": "專為茶飲、烘焙、甜點及食品製造商打造的 100% 大甲原產冷凍純芋泥。契作低溫冷鏈，無添加的完美解決方案。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

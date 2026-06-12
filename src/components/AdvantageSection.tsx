@@ -21,6 +21,12 @@ import {
   Cake,
   Building2
 } from "lucide-react";
+import taroLaborSaved from "../assets/images/taro_labor_saved_1779950193601.png";
+import taroConsistent from "../assets/images/taro_consistent_1779950213423.png";
+import taroTimeSaved from "../assets/images/taro_time_saved_1779950233924.png";
+import taroWasteReduced from "../assets/images/taro_waste_reduced_1779950252096.png";
+import taroFastServing from "../assets/images/taro_fast_serving_1779950268384.png";
+import taroPureQuality from "../assets/images/taro_pure_quality_1779950284138.png";
 
 interface AdvantageSectionProps {
   lang: Language;
@@ -34,7 +40,7 @@ export default function AdvantageSection({ lang, t }: AdvantageSectionProps) {
       case 1:
         return (
           <img 
-            src="/src/assets/images/taro_labor_saved_1779950193601.png" 
+            src={taroLaborSaved} 
             alt="Reduced Labor Cost Workstation" 
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
@@ -43,7 +49,7 @@ export default function AdvantageSection({ lang, t }: AdvantageSectionProps) {
       case 2:
         return (
           <img 
-            src="/src/assets/images/taro_consistent_1779950213423.png" 
+            src={taroConsistent} 
             alt="Premium Testing Spoon Consistency" 
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
@@ -52,7 +58,7 @@ export default function AdvantageSection({ lang, t }: AdvantageSectionProps) {
       case 3:
         return (
           <img 
-            src="/src/assets/images/taro_time_saved_1779950233924.png" 
+            src={taroTimeSaved} 
             alt="Minimalist Hourglass Timer Setup" 
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
@@ -61,7 +67,7 @@ export default function AdvantageSection({ lang, t }: AdvantageSectionProps) {
       case 4:
         return (
           <img 
-            src="/src/assets/images/taro_waste_reduced_1779950252096.png" 
+            src={taroWasteReduced} 
             alt="Cryogenic Frozen Vacuum Sealed Package" 
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
@@ -70,7 +76,7 @@ export default function AdvantageSection({ lang, t }: AdvantageSectionProps) {
       case 5:
         return (
           <img 
-            src="/src/assets/images/taro_fast_serving_1779950268384.png" 
+            src={taroFastServing} 
             alt="Smooth Taro milk tea Swirl prep" 
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
@@ -79,7 +85,7 @@ export default function AdvantageSection({ lang, t }: AdvantageSectionProps) {
       case 6:
         return (
           <img 
-            src="/src/assets/images/taro_pure_quality_1779950284138.png" 
+            src={taroPureQuality} 
             alt="Pure 100 percent natural taro scoop" 
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"

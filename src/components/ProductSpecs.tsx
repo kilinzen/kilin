@@ -6,6 +6,8 @@
 import React from "react";
 import { Language, TranslationSchema } from "../types";
 import { Scale, ShieldAlert, Archive, FileSpreadsheet, Map, Check } from "lucide-react";
+import taroNaturalSource from "../assets/images/taro_natural_source_1779949735167.png";
+import taroCommercialApp from "../assets/images/taro_commercial_app_1779949755244.png";
 
 interface ProductSpecsProps {
   lang: Language;
@@ -79,7 +81,7 @@ export default function ProductSpecs({ lang, t }: ProductSpecsProps) {
             <div className="bg-white rounded-2xl border border-slate-200/50 p-4 shadow-sm overflow-hidden flex-1 relative group flex flex-col justify-between">
               <div className="relative h-48 overflow-hidden rounded-xl bg-slate-50 mb-4">
                 <img
-                  src="/src/assets/images/taro_natural_source_1779949735167.png"
+                  src={taroNaturalSource}
                   alt="Dajia Taro fields"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
@@ -100,7 +102,7 @@ export default function ProductSpecs({ lang, t }: ProductSpecsProps) {
             <div className="bg-white rounded-2xl border border-slate-200/50 p-4 shadow-sm overflow-hidden flex-1 relative group flex flex-col justify-between">
               <div className="relative h-48 overflow-hidden rounded-xl bg-slate-50 mb-4">
                 <img
-                  src="/src/assets/images/taro_commercial_app_1779949755244.png"
+                  src={taroCommercialApp}
                   alt="Taro application dessert"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"

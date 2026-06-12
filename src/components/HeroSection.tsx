@@ -6,6 +6,7 @@
 import React from "react";
 import { Language, TranslationSchema } from "../types";
 import { ArrowRight, Sparkles, CheckCircle2, ShieldCheck, Factory } from "lucide-react";
+import taroProductHero from "../assets/images/taro_product_hero_1779949714720.png";
 
 interface HeroSectionProps {
   lang: Language;
@@ -115,7 +116,7 @@ export default function HeroSection({ lang, t }: HeroSectionProps) {
             <div className="bg-white p-4 rounded-3xl border border-slate-100 shadow-xl overflow-hidden group">
               <div className="relative aspect-square overflow-hidden rounded-2xl bg-purple-50">
                 <img
-                  src="/src/assets/images/taro_product_hero_1779949714720.png"
+                  src={taroProductHero}
                   alt="Dajia 100% Frozen Pure Taro Paste Product Bag"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"

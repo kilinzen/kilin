@@ -6,6 +6,7 @@
 import React from "react";
 import { Language, TranslationSchema } from "../types";
 import { Droplets, ShieldCheck, Landmark, Heart } from "lucide-react";
+import taroNaturalSource from "../assets/images/taro_natural_source_1779949735167.png";
 
 interface OriginSectionProps {
   lang: Language;
@@ -107,7 +108,7 @@ export default function OriginSection({ lang, t }: OriginSectionProps) {
             <div className="bg-white p-4 rounded-3xl border border-slate-150 shadow-lg group">
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-purple-50">
                 <img
-                  src="/src/assets/images/taro_natural_source_1779949735167.png"
+                  src={taroNaturalSource}
                   alt="Taiwan Dajia Farm fields"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-500"

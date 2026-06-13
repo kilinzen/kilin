@@ -49,8 +49,15 @@ export default function FaqSection({ lang, t }: FaqSectionProps) {
               <span>{lang === "zh" ? "客戶支持專區" : "Wholesale Support Q&A"}</span>
             </div>
             
-            <h2 className="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight leading-tight break-keep">
-              {t.faq.title}
+            <h2 className="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight leading-tight">
+              {lang === "zh" ? (
+                <>
+                  <span className="inline-block">常見問題</span>
+                  <span className="inline-block">與客戶解答</span>
+                </>
+              ) : (
+                t.faq.title
+              )}
             </h2>
             
             <p className="text-lg text-slate-500 leading-relaxed max-w-md">

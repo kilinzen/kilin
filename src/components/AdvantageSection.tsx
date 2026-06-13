@@ -109,8 +109,17 @@ export default function AdvantageSection({ lang, t }: AdvantageSectionProps) {
           <span className="text-xs font-bold tracking-widest text-purple-600 uppercase px-3 py-1 rounded-full bg-purple-50 border border-purple-100 uppercase">
             {lang === "zh" ? "B2B 核心革命" : "B2B Core Revolution"}
           </span>
-          <h2 className="mt-4 text-3xl sm:text-4xl font-black text-slate-900 tracking-tight leading-snug break-keep">
-            {t.advantages.title}
+          <h2 className="mt-4 text-3xl sm:text-4xl font-black text-slate-900 tracking-tight leading-snug">
+            {lang === "zh" ? (
+              <>
+                <span className="inline-block">顛覆傳統！</span>
+                <span className="inline-block">為什麼各大連鎖餐飲</span>
+                <span className="inline-block">都改用我們的</span>
+                <span className="inline-block">冷凍純芋泥？</span>
+              </>
+            ) : (
+              t.advantages.title
+            )}
           </h2>
           <p className="mt-4 text-base sm:text-lg text-slate-600">
             {t.advantages.sub}
@@ -360,7 +369,14 @@ export default function AdvantageSection({ lang, t }: AdvantageSectionProps) {
         <div>
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h3 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight leading-snug">
-              {t.advantages.vsTitle}
+              {lang === "zh" ? (
+                <>
+                  <span className="block sm:inline">我們產品帶給店家的</span>
+                  <span className="block sm:inline text-[#7E60B8]">6大絕佳優勢</span>
+                </>
+              ) : (
+                t.advantages.vsTitle
+              )}
             </h3>
             <p className="text-sm text-slate-500 mt-2">
               {t.advantages.benefitsSub}

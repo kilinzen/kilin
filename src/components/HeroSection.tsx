@@ -60,8 +60,17 @@ export default function HeroSection({ lang, t }: HeroSectionProps) {
               )}
             </h1>
 
-            <p className="text-base sm:text-xl font-bold text-slate-800 max-w-2xl mx-auto lg:mx-0 leading-relaxed break-keep">
-              {t.hero.titleSub}
+            <p className="text-base sm:text-xl font-bold text-slate-800 max-w-2xl mx-auto lg:mx-0 leading-relaxed text-wrap">
+              {lang === "zh" ? (
+                <>
+                  <span className="inline-block">免削皮、</span>
+                  <span className="inline-block">解凍即用！</span>
+                  <span className="inline-block">專為商用茶飲烘焙</span>
+                  <span className="inline-block">打造的頂級芋泥</span>
+                </>
+              ) : (
+                t.hero.titleSub
+              )}
             </p>
 
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
@@ -73,7 +82,18 @@ export default function HeroSection({ lang, t }: HeroSectionProps) {
               <span className="flex-shrink-0 flex items-center justify-center w-6 h-6 rounded-full bg-emerald-50 text-emerald-600 font-bold">
                 ✓
               </span>
-              <span className="font-medium break-keep">{t.hero.specSummary}</span>
+              <span className="font-medium text-wrap">
+                {lang === "zh" ? (
+                  <>
+                    <span className="inline-block">安心規格：</span>
+                    <span className="inline-block">100% 純熟芋泥 · </span>
+                    <span className="inline-block">1kg 保鮮袋裝 · </span>
+                    <span className="inline-block">20包/箱</span>
+                  </>
+                ) : (
+                  t.hero.specSummary
+                )}
+              </span>
             </div>
 
             {/* Dual CTAs */}

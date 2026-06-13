@@ -20,7 +20,7 @@ export default function App() {
   const t = translations[lang];
 
   return (
-    <div className="min-h-screen bg-white text-slate-800 font-sans antialiased text-slate-900 selection:bg-purple-100 selection:text-purple-900">
+    <div className="min-h-screen bg-white text-slate-800 font-sans antialiased text-slate-900 selection:bg-purple-100 selection:text-purple-900 overflow-x-hidden w-full">
       
       {/* 1. Sticky Bilingual Navigation Header */}
       <Header lang={lang} setLang={setLang} t={t} />

@@ -24,8 +24,15 @@ export default function ProductSpecs({ lang, t }: ProductSpecsProps) {
           <span className="text-xs font-bold tracking-widest text-purple-600 uppercase px-3 py-1 rounded-full bg-purple-50 border border-purple-100">
             {lang === "zh" ? "產品規格與品管" : "Industrial Spec & QC"}
           </span>
-          <h2 className="mt-4 text-3xl sm:text-4xl font-black text-slate-900 tracking-tight leading-snug break-keep">
-            {t.specs.title}
+          <h2 className="mt-4 text-3xl sm:text-4xl font-black text-slate-900 tracking-tight leading-snug">
+            {lang === "zh" ? (
+              <>
+                <span className="inline-block">專業商用規格</span>
+                <span className="inline-block">與安全認證</span>
+              </>
+            ) : (
+              t.specs.title
+            )}
           </h2>
           <p className="mt-4 text-base sm:text-lg text-slate-600">
             {t.specs.sub}

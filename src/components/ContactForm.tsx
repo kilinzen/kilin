@@ -73,8 +73,15 @@ export default function ContactForm({ lang, t }: ContactFormProps) {
               <span className="text-xs font-bold tracking-widest text-[#7E60B8] uppercase px-3 py-1 rounded-full bg-purple-50 border border-purple-100">
                 {lang === "zh" ? "B2B 樣品測試申請" : "Claim Wholesale Samples"}
               </span>
-              <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight leading-tight break-keep">
-                {t.contact.title}
+              <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight leading-tight">
+                {lang === "zh" ? (
+                  <>
+                    <span className="inline-block">商業合作洽詢 &amp; </span>
+                    <span className="inline-block">樣品免費索取</span>
+                  </>
+                ) : (
+                  t.contact.title
+                )}
               </h2>
               <p className="text-base text-slate-600 leading-relaxed">
                 {t.contact.sub}

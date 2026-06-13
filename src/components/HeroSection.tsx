@@ -60,7 +60,7 @@ export default function HeroSection({ lang, t }: HeroSectionProps) {
               )}
             </h1>
 
-            <p className="text-base sm:text-xl font-bold text-slate-800 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+            <p className="text-base sm:text-xl font-bold text-slate-800 max-w-2xl mx-auto lg:mx-0 leading-relaxed break-keep">
               {t.hero.titleSub}
             </p>
 
@@ -73,7 +73,7 @@ export default function HeroSection({ lang, t }: HeroSectionProps) {
               <span className="flex-shrink-0 flex items-center justify-center w-6 h-6 rounded-full bg-emerald-50 text-emerald-600 font-bold">
                 ✓
               </span>
-              <span className="font-medium">{t.hero.specSummary}</span>
+              <span className="font-medium break-keep">{t.hero.specSummary}</span>
             </div>
 
             {/* Dual CTAs */}

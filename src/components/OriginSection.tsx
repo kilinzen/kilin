@@ -26,7 +26,7 @@ export default function OriginSection({ lang, t }: OriginSectionProps) {
               {lang === "zh" ? "正宗源頭 · 在地精神" : "Dajia Pedigree & Spirit"}
             </span>
 
-            <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight leading-snug">
+            <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight leading-snug break-keep">
               {t.hero.originLabel}
             </h2>
 

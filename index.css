@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;605;605;700;800&family=Noto+Sans+TC:wght@300;400;500;700;900&family=Space+Grotesk:wght@500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Noto Sans TC", "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: "Space Grotesk", "Noto Sans TC", sans-serif;
+}

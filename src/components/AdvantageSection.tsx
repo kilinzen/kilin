@@ -196,8 +196,8 @@ export default function AdvantageSection({ lang, t }: AdvantageSectionProps) {
 
                 <p className="text-sm font-bold text-purple-100 mb-6">
                   {lang === "zh" 
-                    ? "革命性極簡備料：即時供應、100% 潔淨天然、安心備戰" 
-                    : "Revolutionary simplicity: instant, zero-touch, clean safety"}
+                    ? "革命性極簡備料：即時供應、配方潔淨簡單、安心備戰" 
+                    : "Revolutionary simplicity: instant, zero-touch, clean formula safety"}
                 </p>
 
                 {/* Steps Timeline or Flow */}
@@ -205,7 +205,7 @@ export default function AdvantageSection({ lang, t }: AdvantageSectionProps) {
                   {[
                     { step: 1, title: lang === "zh" ? "大甲契作農場，精選頂級芋肉" : "Dajia Contract Farming", desc: lang === "zh" ? "產地直送自有 ISO22000 認證自動化整潔工廠" : "Direct transit to our certified automated facility" },
                     { step: 2, title: lang === "zh" ? "專業高溫蒸煮與智能極細打泥" : "High-speed Refining", desc: lang === "zh" ? "透過精密機組均質化，確保每袋達到分子級細緻，口感絲滑不帶結塊" : "Homogenized molecular texture, silky smoothness with zero lumps" },
-                    { step: 3, title: lang === "zh" ? "1kg 量身袋裝 ➔ IQF 急速深冷急凍 -18°C" : "1kg Cryogenic Sealing & Flash Freezing", desc: lang === "zh" ? "完美鎖住初蒸出爐時的純白芋香與營養纖維" : "Locks in fresh-out-of-steamer aroma and prebiotic fiber" },
+                    { step: 3, title: lang === "zh" ? "1kg 量身袋裝 ➔ 獨家冷凍鎖鮮技術" : "1kg Cryogenic Sealing & Flash Freezing", desc: lang === "zh" ? "完美鎖住初蒸出爐時的純白芋香與營養纖維" : "Locks in fresh-out-of-steamer aroma and prebiotic fiber" },
                     { step: 4, title: lang === "zh" ? "冷藏解凍 ➔ 剪袋即用！" : "Thaw & Squeeze to Use!", desc: lang === "zh" ? "不花一秒鐘、不費一分力，完美與其他原料搭配使用" : "Zero stress, zero labor hours, instantly applicable to recipes" }
                   ].map((item) => (
                     <div key={item.step} className="flex items-start space-x-3.5">
@@ -274,8 +274,8 @@ export default function AdvantageSection({ lang, t }: AdvantageSectionProps) {
                 tag: "精品蛋糕店 / 網紅甜點坊",
                 title: "優雅莫蘭迪粉紫 ‧ 抹面絲滑",
                 painpoint: "廉價批發芋泥常摻混著色劑、人工香精與綠豆沙，味道粗糙不純，破壞精品千層或生乳捲質感。",
-                solution: "堅持 100% 大甲原產純熟芋，不加一滴澱粉。與高脂進口動物鮮奶油完美拌合，抹面無氣孔、色澤自然高級。",
-                metric: "100% 天然素材無化學添加"
+                solution: "堅持採用大甲原產熟芋（僅添加水與糖，零化學澱粉成分）。與高脂進口動物鮮奶油完美拌合，抹面無氣孔、色澤自然高級。",
+                metric: "成分單純，零化學、防腐添加"
               },
               {
                 id: "factory",

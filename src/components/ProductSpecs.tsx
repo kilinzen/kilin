@@ -77,8 +77,8 @@ export default function ProductSpecs({ lang, t }: ProductSpecsProps) {
               </span>
               <p className="text-xs text-purple-800 font-medium">
                 {lang === "zh" 
-                  ? "我們堅持 100% 純天然，拒絕添加任何綠豆沙、修飾澱粉、黃色或紫色色素與化學香精。誠實申報，安心供貨。" 
-                  : "We pledge absolute natural honesty. No mung beans, starch fillers, or chemical flavor agents."}
+                  ? "我們的配方乾淨簡單，除必要的白糖與水外，絕不添加任何綠豆沙、修飾澱粉、黃色或紫色色素與化學防腐劑。誠實申報，安心供貨。" 
+                  : "We pledge absolute ingredient honesty. Our formula contains only premium taro, sugar, and water. No mung beans, modified starch, dyes, or chemical preservation agents."}
               </p>
             </div>
           </div>

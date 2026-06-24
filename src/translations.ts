@@ -19,8 +19,8 @@ export const translations: Record<"zh" | "en", TranslationSchema> = {
       badge: "芋研所 TARO LAB · 100% 大甲自營工廠低溫加工",
       titleMain: "芋研所大甲急凍純芋泥",
       titleSub: "免削皮、解凍即用！專為商用茶飲烘焙打造的頂級芋泥",
-      desc: "大甲契作產地直營的 100% 純天然無添加芋泥。嚴選台中大甲特級檳榔心芋頭，搭配自有食品廠專業蒸汽熟化與低溫高速急速冷凍技術，鎖住鮮甜，保留天然芋香與細緻綿密的極致口感。",
-      specSummary: "安心規格：100% 純熟芋泥 · 1kg 保鮮袋裝 · 20包/箱",
+      desc: "大甲契作產地直營的極致熟化芋泥，配方乾淨簡單，僅含大甲特級檳榔心芋頭、水與砂糖。搭配自有食品廠專業蒸汽熟化與低溫高速急速冷凍技術，鎖住鮮甜，保留天然芋香與細緻綿密的極致口感，絕無防腐劑、色素、或任何其他化學添加物。",
+      specSummary: "安心規格：純熟化芋泥（無防腐劑、色素化學添加） · 1kg 保鮮袋裝 · 20包/箱",
       ctaPrimary: "免費申請 1kg 樣品",
       ctaSecondary: "檢視產品詳細規格",
       originLabel: "芋研所契約農作檳榔心芋",
@@ -33,7 +33,7 @@ export const translations: Record<"zh" | "en", TranslationSchema> = {
       traditional: "傳統現場手工製程",
       traditionalDesc: "採購生鮮 ➔ 人工削皮 (高損耗) ➔ 切塊洗滌 ➔ 蒸汽熟煮 (耗能耗時) ➔ 手工或機器打泥 (易結塊不均) ➔ 冷卻保存 (細菌滋生風險)",
       ours: "我們專利的冷凍芋泥流程",
-      oursDesc: "大甲產地直達 ➔ 自有工廠科技清洗 ➔ 削皮蒸熟 ➔ 專業機組低溫細化打泥 (極度細緻) ➔ 1kg/袋分裝 ➔ -18°C 瞬間急凍運送",
+      oursDesc: "大甲產地直達 ➔ 自有工廠科技清洗 ➔ 削皮蒸熟 ➔ 專業機組低溫細化打泥 (極度細緻) ➔ 1kg/袋分裝 ➔ 瞬間急凍運送",
       vsTitle: "我們產品帶給店家的 6 大絕佳優勢",
       benefitsTitle: "店家的極致營運優勢",
       benefitsSub: "不僅僅是食品原料，更是提升整體店鋪利潤率與管理效率的利器。",
@@ -65,8 +65,8 @@ export const translations: Record<"zh" | "en", TranslationSchema> = {
         },
         {
           id: 6,
-          title: "真正 100% 純天然芋泥",
-          desc: "市場上許多次級品會摻雜綠豆沙、便宜澱粉或人工香精來壓低售價。我們堅守承諾：100% 純芋泥，成分表僅有大甲芋頭，絕無第二種添加物。",
+          title: "無化學添加之乾淨配方",
+          desc: "市場上許多次級品會摻雜綠豆沙、便宜澱粉、色素或防腐劑來降低成本。我們堅守品質，除了必需的純水和砂糖之外，主要原料100%採用大甲特級芋頭，絕無添加任何綠豆沙、色素、防腐劑或化學香料。",
         },
       ],
     },
@@ -76,11 +76,11 @@ export const translations: Record<"zh" | "en", TranslationSchema> = {
       weight: "產品淨重",
       weightVal: "1.0 公斤 ± 5% / 精密食品級食品塑料袋裝",
       storage: "保存條件",
-      storageVal: "冷凍保存 -18°C 以下（不可反覆解凍）",
+      storageVal: "低溫冷凍保存（不可反覆解凍）",
       shelfLife: "保存期限",
       shelfLifeVal: "未開封冷凍 12 個月 / 開封後請於 48 小時內冷藏使用完畢",
       ingredients: "產品成分",
-      ingredientsVal: "100% 大甲原產檳榔心芋頭（無添加任何綠豆沙、色素、防腐劑或人工香料）",
+      ingredientsVal: "大甲原產檳榔心芋頭、水、砂糖（無添加任何綠豆沙、色素、防腐劑或化學香料）",
       origin: "生產產地",
       originVal: "台灣台中大甲特約產區 / 自有食品工廠生產（通過 ISO22000 與 HACCP 雙認證）",
       targetTitle: "廣泛適用餐飲範疇",
@@ -101,19 +101,19 @@ export const translations: Record<"zh" | "en", TranslationSchema> = {
     },
     faq: {
       title: "常見問題與客戶解答",
-      sub: "為您解答關於大甲冷凍 100% 純芋泥批發與供應鏈的所有疑問。",
+      sub: "為您解答關於大甲冷凍純芋泥批發與供應鏈的所有疑問。",
       items: [
         {
-          q: "100% 純芋泥到底有沒有加糖、加水或任何人工添加物？",
-          a: "完全無添加！我們的成分 100% 僅含有優質大甲檳榔心芋頭，完全不加一滴水、不加任何綠豆沙、便宜澱粉、防腐劑或人工香精。出廠前皆隨貨提供完整 SGS 檢驗報告。另外，我們也提供含 8% 糖度的「微糖特製版」以供特定烘焙拉花或即食飲品調製需求。"
+          q: "芋泥到底有沒有加糖、加水或任何人工添加物？",
+          a: "我們的芋泥僅包含：優質大甲檳榔心芋頭、水、與少許砂糖以維持風味與保濕度，絕無添加任何化學防腐劑、色素、人工香精、綠豆沙或便宜澱粉。成分單純、真材實料，出廠前皆隨貨提供完整 SGS 檢驗報告，請安心使用！"
         },
         {
           q: "商用後廚解凍與最佳使用的操作方法？",
-          a: "建議在使用前一日（約 12-18 小時）將芋泥包從低溫冷凍庫（-18°C）移至冷藏庫（4°C）自然退冰解凍。解凍後只需剪開食品級密封包裝袋角，即可像擠花袋般輕鬆擠入調配杯或攪拌缸，流程極度便利。"
+          a: "建議在使用前一日（約 12-18 小時）將芋泥包從低溫冷凍庫移至冷藏庫（4°C）自然退冰解凍。解凍後只需剪開食品級密封包裝袋角，即可像擠花袋般輕鬆擠入調配杯或攪拌缸，流程極度便利。"
         },
         {
           q: "解凍後的冷藏保存期限多久？可否重新放回冷凍庫？",
-          a: "因為 100% 天然純芋泥絕無添加防腐劑，開封解凍後請置於 4°C 冷藏，並建議於 48 小時內儘速使用完畢。請特別注意：解凍後「切勿重新放回冷凍庫反覆冰凍」，否則會破壞芋頭澱粉熟化結構，造成水析並喪失滑順口感。"
+          a: "因為芋泥製品一律零化學防腐劑添加，開封解凍後請置於 4°C 冷藏，並建議於 48 小時內儘速使用完畢。請特別注意：解凍後「切勿重新放回冷凍庫反覆冰凍」，否則會破壞芋頭澱粉熟化結構，造成水析並喪失滑順口感。"
         },
         {
           q: "全台配送起運箱數與免冷鏈運費門檻？",
@@ -139,13 +139,13 @@ export const translations: Record<"zh" | "en", TranslationSchema> = {
         },
         {
           id: 3,
-          title: "IQF 全程急凍",
-          desc: "1kg 精準充填包裝 ➔ IQF 即刻急凍深冷至 -18°C，封存天然色香，阻絕一切二次微生物滋生。"
+          title: "獨家冷凍鎖鮮技術",
+          desc: "1kg 精準充填包裝 ➔ 獨家冷凍鎖鮮技術，封存天然色香，阻絕一切二次微生物滋生。"
         },
         {
           id: 4,
           title: "低溫物流車交付",
-          desc: "-18°C 全程恆溫冷裝卡車交付全台客戶。店家免去整晚後廚的悶熱、削皮垃圾與高昂工資耗用。"
+          desc: "全程低溫恆溫冷裝卡車交付全台客戶。店家免去整晚後廚的悶熱、削皮垃圾與高昂工資耗用。"
         }
       ]
     },
@@ -188,8 +188,8 @@ export const translations: Record<"zh" | "en", TranslationSchema> = {
       badge: "No.1 in Taiwan · Owned Specialized Cold Chain Processing Factory",
       titleMain: "Dajia 100% Flash-Frozen Pure Taro Paste",
       titleSub: "No peeling, thaw & use! Ultimate commercial taro recipe solution for wholesale vendors",
-      desc: "One of the extremely rare 100% all-natural, additive-free taro pastes on the market. Sourced exclusively from top-grade Dajia taro in Taichung, processed in our state-of-the-art HACCP facility with hyperbaric high-speed quick freezing to seal in maximum natural aroma, velvety texture, and pastel taro coloration.",
-      specSummary: "Spec: 100% Pure Taro Paste · 1.0 kg/bag · 20 bags/carton",
+      desc: "Delightfully pure taro paste made with only Dajia taro, water, and sugar—absolutely zero chemical colors, starches, or preservatives. Sourced exclusively from premium Dajia taro in Taichung and processed in our certified facility using low-temperature flash freezing to lock in pure natural aroma.",
+      specSummary: "Spec: Cooked Taro Paste (Zero Preservative / Starch Fillers) · 1.0 kg/bag · 20 bags/carton",
       ctaPrimary: "Request Free 1kg Sample",
       ctaSecondary: "Get Bulk Wholesale Quotes",
       originLabel: "100% Dajia Betel Nut Taro",
@@ -202,7 +202,7 @@ export const translations: Record<"zh" | "en", TranslationSchema> = {
       traditional: "Traditional In-store Laborious Process",
       traditionalDesc: "Wholesale raw bulbs ➔ Manual peeling (High loss/waste) ➔ Slice & wash ➔ Electric steaming (High energy) ➔ Hand or machine smashing (Risks of lumpy texture) ➔ Cold storage & prep (High microbial danger)",
       ours: "Our Patent Cold-Chain Formulation",
-      oursDesc: "Direct farm transport ➔ Factory automatic washing ➔ Slicing & steaming ➔ High-speed industrial homogenizing (Ultra smooth) ➔ Sterile 1kg bagging ➔ -18°C Cryogenic flash freezing & delivery",
+      oursDesc: "Direct farm transport ➔ Factory automatic washing ➔ Slicing & steaming ➔ High-speed industrial homogenizing (Ultra smooth) ➔ Sterile 1kg bagging ➔ Cryogenic flash freezing & delivery",
       vsTitle: "6 Supreme Operational Perks Brought to Your Store",
       benefitsTitle: "Ultimate Vendor Advantages",
       benefitsSub: "More than just premium ingredients, it is a operational lever to boost kitchen margin, speed, and standard consistency.",
@@ -234,8 +234,8 @@ export const translations: Record<"zh" | "en", TranslationSchema> = {
         },
         {
           id: 6,
-          title: "True 100% Pure Organic Taro",
-          desc: "Low-end paste substitutes mix raw starch, mung bean paste, yellow food dye, or artificial flavorings. Our ingredient checklist contains only Dajia Taro — nothing else.",
+          title: "Clean Ingredient Formula",
+          desc: "Low-end paste brands dilute taro with mung beans, starch fillers, or synthetic fragrance. We stay absolutely honest: containing only premium taro, water, and sugar, with zero preservatives or food dyes.",
         },
       ],
     },
@@ -245,11 +245,11 @@ export const translations: Record<"zh" | "en", TranslationSchema> = {
       weight: "Net Weight",
       weightVal: "1.0 kg ± 5% / High barrier commercial food-grade bag",
       storage: "Storage conditions",
-      storageVal: "Frozen under -18°C (Do not refreeze after thawing)",
+      storageVal: "Low-temperature frozen storage (Do not refreeze after thawing)",
       shelfLife: "Shelf Life",
       shelfLifeVal: "12 months unopened frozen / Use within 48 hours chilled after opening",
       ingredients: "Ingredients List",
-      ingredientsVal: "100% Taiwanese Dajia Betel Nut Taro (Zero starch, zero mung beans, zero preservatives/fragrance)",
+      ingredientsVal: "Taiwanese Dajia Betel Nut Taro, Water, Sugar (Zero chemical starch, zero mung beans, zero preservatives/fragrance)",
       origin: "Origin & Production",
       originVal: "Dajia, Taichung, Taiwan / Self-owned ISO 22000 and HACCP certified automated food factory",
       targetTitle: "Ideal Culinary Application Areas",
@@ -270,19 +270,19 @@ export const translations: Record<"zh" | "en", TranslationSchema> = {
     },
     faq: {
       title: "Frequently Asked Questions",
-      sub: "Get answers regarding our 100% Dajia frozen taro paste wholesale parameters & processing supply chains.",
+      sub: "Get answers regarding our Dajia frozen taro paste wholesale parameters & processing supply chains.",
       items: [
         {
-          q: "Is your 100% pure taro paste really additive-free? Any preservatives?",
-          a: "100% pure taro paste with zero additives! Our raw ingredients list contains solely top-tier Dajia Betel Nut Taro. No added water, mung beans, auxiliary starch fillers, chemical preservation agents, or flavorings. Standard SGS reports accompany each batch. We also supply a 'custom 8% sweet recipe' options upon retail bakeries' special requests."
+          q: "Does your taro paste contain added water, sugar, or any artificial ingredients?",
+          a: "Our taro paste contains only: premium Dajia Betel Nut taro, pure water, and white sugar for stability and flavor preservation. We absolutely do not use any chemical starch fillers, mung beans, preservatives, artificial colors, or artificial fragrances. Complete SGS reports are available for every batch."
         },
         {
           q: "What is the best configuration to thaw and use within professional kitchens?",
-          a: "Simply transfer the required vacuum pouches from frozen chambers (-18°C) to standard chillers (4°C) roughly 12-18 hours prior to baking or mixer assembly. Snip the pouch corner to seamlessly pipe or spread. Prep labor time instantly becomes absolute zero."
+          a: "Simply transfer the required vacuum pouches from frozen chambers to standard chillers (4°C) roughly 12-18 hours prior to baking or mixer assembly. Snip the pouch corner to seamlessly pipe or spread. Prep labor time instantly becomes absolute zero."
         },
         {
           q: "How long is the shelf life once defrosted? Can we put it back in the freezer?",
-          a: "Since the pure paste is completely free of preservatives, keep it chilled under 4°C after opening and use within 48 hours. Crucial safety warning: DO NOT put it back in the freezer once defrosted. Re-freezing alters natural gelatinized structures, leading to water separation and lumpy quality."
+          a: "Since the paste is completely free of chemical preservatives, keep it chilled under 4°C after opening and use within 48 hours. Crucial safety warning: DO NOT put it back in the freezer once defrosted. Re-freezing alters natural structures, leading to water separation and quality loss."
         },
         {
           q: "What is the bulk shipping threshold and free cold-transport terms?",
@@ -309,7 +309,7 @@ export const translations: Record<"zh" | "en", TranslationSchema> = {
         {
           id: 3,
           title: "IQF Cryogenic Sealing",
-          desc: "Immediate flash-freezing to -18°C in zero-oxygen plastic pouches preserves raw volatile aroma and natural purplish sheen."
+          desc: "Immediate flash-freezing in zero-oxygen plastic pouches preserves raw volatile aroma and natural purplish sheen."
         },
         {
           id: 4,

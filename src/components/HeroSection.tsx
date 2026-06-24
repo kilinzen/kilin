@@ -86,7 +86,7 @@ export default function HeroSection({ lang, t }: HeroSectionProps) {
                 {lang === "zh" ? (
                   <>
                     <span className="inline-block">安心規格：</span>
-                    <span className="inline-block">100% 純熟芋泥 · </span>
+                    <span className="inline-block">熟化無防腐芋泥 · </span>
                     <span className="inline-block">1kg 保鮮袋裝 · </span>
                     <span className="inline-block">20包/箱</span>
                   </>
@@ -143,7 +143,7 @@ export default function HeroSection({ lang, t }: HeroSectionProps) {
                 />
                 {/* Floating pill for "100% Pure" */}
                 <span className="absolute top-4 right-4 inline-flex items-center px-3.5 py-1.5 rounded-full text-xs font-bold bg-[#FAF9FC] text-purple-700 border border-purple-200 shadow-sm backdrop-blur-md">
-                  100% 純天然免調味
+                  純淨配方、零化學添加
                 </span>
                 {/* Micro branding overlay */}
                 <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-900/80 via-slate-900/30 to-transparent p-6 text-white text-left">

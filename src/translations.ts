@@ -172,7 +172,7 @@ export const translations: Record<"zh" | "en", TranslationSchema> = {
       phone: "客服諮詢熱線",
       email: "商務電子信箱",
       hours: "營業時間",
-      rights: "芋研所大甲冷凍食品科技版權所有。© 2026 Taro Research Labs. 高品質生鮮冷凍批發工廠直營。"
+      rights: "帝保股份有限公司 | 芋研所大甲冷凍食品科技版權所有。© 2026 Taro Research Labs. 高品質生鮮冷凍批發工廠直營。"
     }
   },
   en: {
@@ -341,7 +341,7 @@ export const translations: Record<"zh" | "en", TranslationSchema> = {
       phone: "Customer Support Hotlines",
       email: "B2B Business Email",
       hours: "Business Hours",
-      rights: "Taro Research Labs Co., Ltd. (芋研所) All rights reserved. Organic Farming & Cold-Chain Processing Direct."
+      rights: "Di Bao Co., Ltd. (帝保股份有限公司) | Taro Research Labs Co., Ltd. (芋研所) All rights reserved. Organic Farming & Cold-Chain Processing Direct."
     }
   }
 };

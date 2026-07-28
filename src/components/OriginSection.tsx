@@ -29,7 +29,7 @@ export default function OriginSection({ lang, t }: OriginSectionProps) {
             <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight leading-snug">
               {lang === "zh" ? (
                 <>
-                  <span className="inline-block">芋研所契約農作</span>
+                  <span className="inline-block">CryoLock 契約農作</span>
                   <span className="inline-block">檳榔心芋</span>
                 </>
               ) : (

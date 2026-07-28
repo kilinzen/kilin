@@ -133,21 +133,23 @@ export default function ProductSpecs({ lang, t }: ProductSpecsProps) {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           
           {/* Target Customers */}
-          <div className="bg-white p-8 rounded-2xl border border-purple-100/40 shadow-sm">
-            <h3 className="text-lg font-black text-slate-900 mb-6 border-b border-purple-50 pb-3 flex items-center">
-              <span className="w-2.5 h-2.5 rounded-full bg-[#7E60B8] mr-2"></span>
-              {t.specs.targetTitle}
-            </h3>
-            <ul className="space-y-4">
-              {t.specs.targets.map((target, index) => (
-                <li key={index} className="flex items-start text-sm text-slate-650">
-                  <span className="mr-3 flex items-center justify-center w-5 h-5 rounded-md bg-purple-50 text-[#7E60B8] mt-0.5 font-bold">
-                    ✓
-                  </span>
-                  <span className="font-semibold">{target}</span>
-                </li>
-              ))}
-            </ul>
+          <div className="bg-white p-8 rounded-2xl border border-purple-100/40 shadow-sm flex flex-col justify-between">
+            <div>
+              <h3 className="text-lg font-black text-slate-900 mb-6 border-b border-purple-50 pb-3 flex items-center">
+                <span className="w-2.5 h-2.5 rounded-full bg-[#7E60B8] mr-2"></span>
+                {t.specs.targetTitle}
+              </h3>
+              <ul className="space-y-4">
+                {t.specs.targets.map((target, index) => (
+                  <li key={index} className="flex items-start text-sm text-slate-650">
+                    <span className="mr-3 flex items-center justify-center w-5 h-5 rounded-md bg-purple-50 text-[#7E60B8] mt-0.5 font-bold">
+                      ✓
+                    </span>
+                    <span className="font-semibold text-slate-700">{target}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
           {/* Quality certifications */}
@@ -160,10 +162,10 @@ export default function ProductSpecs({ lang, t }: ProductSpecsProps) {
               <ul className="space-y-4">
                 {t.specs.certList.map((cert, index) => (
                   <li key={index} className="flex items-center text-sm text-slate-600">
-                    <span className="mr-3 flex-shrink-0 w-5.5 h-5.5 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center text-[10px] font-bold">
-                      ISO
+                    <span className="mr-3 flex-shrink-0 w-5 h-5 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center text-xs font-bold">
+                      ✓
                     </span>
-                    <span className="font-semibold">{cert}</span>
+                    <span className="font-semibold text-slate-700">{cert}</span>
                   </li>
                 ))}
               </ul>
@@ -176,6 +178,47 @@ export default function ProductSpecs({ lang, t }: ProductSpecsProps) {
             </p>
           </div>
 
+        </div>
+
+        {/* Nutrition Facts */}
+        <div className="mt-8 bg-white p-8 rounded-2xl border border-slate-200/50 shadow-sm">
+          <h3 className="text-lg font-black text-slate-900 mb-6 flex items-center justify-center text-center">
+            {lang === "zh" ? "八大營養標示 (每 100 公克)" : "Nutrition Facts (per 100g)"}
+          </h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+            <div className="flex justify-between border-b border-slate-100 pb-2">
+              <span className="text-slate-500">{lang === "zh" ? "熱量" : "Calories"}</span>
+              <span className="font-bold text-slate-800">128.2 {lang === "zh" ? "大卡" : "kcal"}</span>
+            </div>
+            <div className="flex justify-between border-b border-slate-100 pb-2">
+              <span className="text-slate-500">{lang === "zh" ? "蛋白質" : "Protein"}</span>
+              <span className="font-bold text-slate-800">5.0 {lang === "zh" ? "公克" : "g"}</span>
+            </div>
+            <div className="flex justify-between border-b border-slate-100 pb-2">
+              <span className="text-slate-500">{lang === "zh" ? "脂肪" : "Fat"}</span>
+              <span className="font-bold text-slate-800">0.2 {lang === "zh" ? "公克" : "g"}</span>
+            </div>
+            <div className="flex justify-between border-b border-slate-100 pb-2">
+              <span className="text-slate-500">{lang === "zh" ? "飽和脂肪" : "Saturated Fat"}</span>
+              <span className="font-bold text-slate-800">0.06 {lang === "zh" ? "公克" : "g"}</span>
+            </div>
+            <div className="flex justify-between border-b md:border-b-0 border-slate-100 pb-2">
+              <span className="text-slate-500">{lang === "zh" ? "反式脂肪" : "Trans Fat"}</span>
+              <span className="font-bold text-slate-800">0 {lang === "zh" ? "公克" : "g"}</span>
+            </div>
+            <div className="flex justify-between border-b md:border-b-0 border-slate-100 pb-2">
+              <span className="text-slate-500">{lang === "zh" ? "碳水化合物" : "Carbohydrate"}</span>
+              <span className="font-bold text-slate-800">26.6 {lang === "zh" ? "公克" : "g"}</span>
+            </div>
+            <div className="flex justify-between border-b md:border-b-0 border-slate-100 pb-2">
+              <span className="text-slate-500">{lang === "zh" ? "糖" : "Sugar"}</span>
+              <span className="font-bold text-slate-800">16.3 {lang === "zh" ? "公克" : "g"}</span>
+            </div>
+            <div className="flex justify-between border-b md:border-b-0 border-slate-100 pb-2">
+              <span className="text-slate-500">{lang === "zh" ? "鈉" : "Sodium"}</span>
+              <span className="font-bold text-slate-800">3.1 {lang === "zh" ? "毫克" : "mg"}</span>
+            </div>
+          </div>
         </div>
 
       </div>

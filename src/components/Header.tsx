@@ -27,18 +27,15 @@ export default function Header({ lang, setLang, t }: HeaderProps) {
         <div className="flex justify-between items-center h-20">
           {/* Logo Brand area */}
           <div className="flex items-center space-x-2.5 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
-            <div className="w-10 h-10 rounded-xl bg-purple-600 flex items-center justify-center text-white font-black text-lg shadow-md shadow-purple-200 shrink-0">
-              研
-            </div>
             <div className="min-w-0">
               <span className="text-lg sm:text-xl font-black tracking-tight text-slate-900 flex items-center block leading-none">
-                芋研所
-                <span className="ml-1.5 inline-flex items-center px-1.5 py-0.5 rounded text-[9px] font-extrabold bg-purple-100 text-purple-700 border border-purple-200/50 uppercase tracking-widest shrink-0">
-                  B2B
+                CryoLock
+                <span className="ml-1.5 inline-flex items-center px-1.5 py-0.5 rounded text-[9px] font-extrabold bg-purple-100 text-purple-800 border border-purple-200 uppercase tracking-widest shrink-0">
+                  極凍鎖鮮
                 </span>
               </span>
               <span className="text-[9px] text-slate-500 block font-mono tracking-wider mt-0.5 truncate uppercase">
-                Taro Research Labs
+                帝保股份有限公司
               </span>
             </div>
           </div>

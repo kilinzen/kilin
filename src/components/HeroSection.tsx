@@ -44,19 +44,21 @@ export default function HeroSection({ lang, t }: HeroSectionProps) {
               <span>{t.hero.badge}</span>
             </div>
 
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 leading-[1.2] lg:leading-[1.15]">
+            <h1 className="text-3xl sm:text-5xl lg:text-5xl font-black tracking-tight text-slate-900 leading-[1.2] lg:leading-[1.15]">
               {lang === "zh" ? (
                 <>
-                  <span className="text-purple-600 relative inline-block">
-                    芋研所
-                    <span className="absolute bottom-1 left-0 w-full h-[6px] bg-purple-100 rounded-full -z-10" />
+                  <span className="text-purple-700 relative inline-block">
+                    100%純芋頭泥
+                    <span className="absolute bottom-1 left-0 w-full h-[6px] bg-purple-200/60 rounded-full -z-10" />
                   </span>
-                  <span className="text-slate-900 block sm:inline mt-1.5 sm:mt-0 sm:ml-3">
-                    大甲急凍純芋泥
+                  <span className="text-slate-900 block mt-1.5 lg:mt-3">
+                    專業商用原料供應
                   </span>
                 </>
               ) : (
-                t.hero.titleMain
+                <span className="text-purple-700">
+                  {t.hero.titleMain}
+                </span>
               )}
             </h1>
 

@@ -16,14 +16,14 @@ export const translations: Record<"zh" | "en", TranslationSchema> = {
       orderSample: "免費索取樣品",
     },
     hero: {
-      badge: "芋研所 TARO LAB · 100% 大甲自營工廠低溫加工",
-      titleMain: "芋研所大甲急凍純芋泥",
-      titleSub: "免削皮、解凍即用！專為商用茶飲烘焙打造的頂級芋泥",
-      desc: "大甲契作產地直營的極致熟化芋泥，配方乾淨簡單，僅含大甲特級檳榔心芋頭、水與砂糖。搭配自有食品廠專業蒸汽熟化與低溫高速急速冷凍技術，鎖住鮮甜，保留天然芋香與細緻綿密的極致口感，絕無防腐劑、色素、或任何其他化學添加物。",
-      specSummary: "安心規格：純熟化芋泥（無防腐劑、色素化學添加） · 1kg 保鮮袋裝 · 20包/箱",
+      badge: "CryoLock 極凍鎖鮮 · 100% 純芋頭泥",
+      titleMain: "100%純芋頭泥 專業商用原料供應",
+      titleSub: "100%純芋頭 不摻其他成分 · 冷凍保存 解凍即用 · 品質穩定 標準化出品",
+      desc: "專為商用茶飲烘焙打造的頂級芋泥，可依需求調整甜度與濃稠度，歡迎洽談長期合作與大量採購。大甲契作產地直營的極致熟化芋泥，搭配自有食品廠專業蒸汽熟化與低溫高速急速冷凍技術，鎖住鮮甜，保留天然芋香與細緻綿密的極致口感。",
+      specSummary: "安心規格：純熟化芋泥 · 獨家保鮮技術 · 15公斤/箱",
       ctaPrimary: "免費申請樣品",
       ctaSecondary: "檢視產品詳細規格",
-      originLabel: "芋研所契約農作檳榔心芋",
+      originLabel: "CryoLock 契約農作檳榔心芋",
       originDesc: "大甲特有的肥沃黑黏土與純淨水源，孕育出澱粉質高、質地細緻綿密的檳榔心芋。我們深耕在地，深入契作農地，從源頭確保每一批原料都達到食品加工的最高標準。",
     },
     advantages: {
@@ -74,11 +74,11 @@ export const translations: Record<"zh" | "en", TranslationSchema> = {
       title: "專業商用規格與安全認證",
       sub: "為了滿足高規格食品工廠和連鎖調飲大牌的品管稽核，我們提供最完整的檢驗與規格報告。",
       weight: "產品淨重",
-      weightVal: "1.0 公斤 ± 5% / 精密食品級食品塑料袋裝",
+      weightVal: "15 公斤 / 箱 (食品級塑料袋裝)",
       storage: "保存條件",
       storageVal: "低溫冷凍保存（不可反覆解凍）",
       shelfLife: "保存期限",
-      shelfLifeVal: "未開封冷凍 12 個月 / 開封後請於 48 小時內冷藏使用完畢",
+      shelfLifeVal: "未開封冷凍 18 個月 / 開封後請於 48 小時內冷藏使用完畢",
       ingredients: "產品成分",
       ingredientsVal: "大甲原產檳榔心芋頭、水、砂糖（無添加任何綠豆沙、色素、防腐劑或化學香料）",
       origin: "生產產地",
@@ -93,7 +93,7 @@ export const translations: Record<"zh" | "en", TranslationSchema> = {
       ],
       certification: "品質與安全保障",
       certList: [
-        "SGS 無農藥殘留檢驗合格報告",
+        "SGS 檢驗報告 (產品編號: ABA26700600) - 無農藥殘留、無重金屬、無生菌數",
         "國際食品安全安全管理系統認證 ISO 22000",
         "食品危害分析管制系統標準 HACCP 驗證",
         "定期投保新台幣 2000 萬元產品責任險"
@@ -101,7 +101,7 @@ export const translations: Record<"zh" | "en", TranslationSchema> = {
     },
     faq: {
       title: "常見問題與客戶解答",
-      sub: "為您解答關於大甲冷凍純芋泥批發與供應鏈的所有疑問。",
+      sub: "為您解答關於冷凍純芋泥批發與供應鏈的所有疑問。",
       items: [
         {
           q: "芋泥到底有沒有加糖、加水或任何人工添加物？",
@@ -117,11 +117,11 @@ export const translations: Record<"zh" | "en", TranslationSchema> = {
         },
         {
           q: "全台配送起運箱數與免冷鏈運費門檻？",
-          a: "全台各縣市皆有專業低溫冷鏈物流車配送（含外島地區）。一般常規出貨起運量為 1 箱（共 20 包，20kg）。全島訂購滿 3 箱即可直享免冷鏈物流運費之特惠方案。"
+          a: "全台各縣市皆有專業低溫冷鏈物流車配送（含外島地區）。一般常規出貨為 15公斤/箱。滿一定數量即可享免冷鏈物流運費之特惠方案。"
         },
         {
-          q: "是否支持連鎖總部的糖度調整或顆粒粗細客製？",
-          a: "可以！針對中大型連鎖茶飲研發部、上市櫃食品製造巨頭或中央廚房，當單次或年度簽約供貨量達一定規模時，我們可以利用自有工廠的精密均質研磨機組，專屬調製符合您調配配方的糖度或「顆粒粒徑粗細比例」規格。"
+          q: "是否支持連鎖總部的甜度調整或濃稠度客製？",
+          a: "可以！針對中大型連鎖茶飲研發部、上市櫃食品製造巨頭或中央廚房，當單次或年度簽約供貨量達一定規模時，我們可以利用自有工廠的精密設備，提供客製項目：專屬調製符合您配方的「甜度調整」與「濃稠度調整」。"
         }
       ],
       logisticsTitle: "產地直達 —— 專業無塵低溫冷鏈流程",
@@ -140,7 +140,7 @@ export const translations: Record<"zh" | "en", TranslationSchema> = {
         {
           id: 3,
           title: "獨家冷凍鎖鮮技術",
-          desc: "1kg 精準充填包裝 ➔ 獨家冷凍鎖鮮技術，封存天然色香，阻絕一切二次微生物滋生。"
+          desc: "精準充填包裝 ➔ 獨家冷凍鎖鮮技術，封存天然色香，阻絕一切二次微生物滋生。"
         },
         {
           id: 4,
@@ -172,7 +172,7 @@ export const translations: Record<"zh" | "en", TranslationSchema> = {
       phone: "客服諮詢熱線",
       email: "商務電子信箱",
       hours: "營業時間",
-      rights: "帝保股份有限公司 | 芋研所大甲冷凍食品科技版權所有。© 2026 Taro Research Labs. 高品質生鮮冷凍批發工廠直營。"
+      rights: "CryoLock 極凍鎖鮮版權所有。© 2026 CryoLock. 帝保股份有限公司高品質生鮮冷凍批發工廠直營。"
     }
   },
   en: {
@@ -243,11 +243,11 @@ export const translations: Record<"zh" | "en", TranslationSchema> = {
       title: "Industrial Commercial Specs & Certifications",
       sub: "To seamlessly pass food auditing and fulfill safety regulations for global franchises, we provide absolute chemical and physical inspection reports.",
       weight: "Net Weight",
-      weightVal: "1.0 kg ± 5% / High barrier commercial food-grade bag",
+      weightVal: "15 kg / carton (High barrier commercial food-grade bag)",
       storage: "Storage conditions",
       storageVal: "Low-temperature frozen storage (Do not refreeze after thawing)",
       shelfLife: "Shelf Life",
-      shelfLifeVal: "12 months unopened frozen / Use within 48 hours chilled after opening",
+      shelfLifeVal: "18 months unopened frozen / Use within 48 hours chilled after opening",
       ingredients: "Ingredients List",
       ingredientsVal: "Taiwanese Dajia Betel Nut Taro, Water, Sugar (Zero chemical starch, zero mung beans, zero preservatives/fragrance)",
       origin: "Origin & Production",
@@ -262,7 +262,7 @@ export const translations: Record<"zh" | "en", TranslationSchema> = {
       ],
       certification: "Quality Assurance & Standards",
       certList: [
-        "SGS Non-residual Pesticide Standard certified",
+        "SGS Inspection Report (No. ABA26700600) - Zero Pesticide, Zero Heavy Metals, Zero Bacteria",
         "ISO 22000 Food Safety Management System certification",
         "HACCP Food Safety Hazards Control standard validated",
         "NTD 20 million comprehensive product liability insurance covered"
@@ -270,7 +270,7 @@ export const translations: Record<"zh" | "en", TranslationSchema> = {
     },
     faq: {
       title: "Frequently Asked Questions",
-      sub: "Get answers regarding our Dajia frozen taro paste wholesale parameters & processing supply chains.",
+      sub: "Get answers regarding our frozen taro paste wholesale parameters & processing supply chains.",
       items: [
         {
           q: "Does your taro paste contain added water, sugar, or any artificial ingredients?",
@@ -286,11 +286,11 @@ export const translations: Record<"zh" | "en", TranslationSchema> = {
         },
         {
           q: "What is the bulk shipping threshold and free cold-transport terms?",
-          a: "All Taiwanese cities (with overseas islands supported) are integrated into our professional cold trucks. Baseline wholesale shipping starts from 1 box (20 packs, i.e., 20kg cumulative). Cold storage delivery charges are waived for purchases over 3 boxes."
+          a: "All Taiwanese cities (with overseas islands supported) are integrated into our professional cold trucks. Baseline wholesale shipping is 15kg/carton. Cold storage delivery charges can be waived for purchases over a certain volume."
         },
         {
-          q: "Do you offer private labeled sweetness adjustment or granule diameter customizations?",
-          a: "Absolutely! For large beverage franchises and food factories, upon yearly volume contract sign-off, we can utilize custom automated milling gear to adjust sweetness profiles or specify customized granule diameters to match your recipes perfectly."
+          q: "Do you offer private labeled sweetness adjustment or thickness customizations?",
+          a: "Absolutely! For large beverage franchises and food factories, upon volume contract sign-off, we can utilize custom automated gear to provide custom options: 'sweetness adjustment' and 'thickness adjustment' to match your recipes perfectly."
         }
       ],
       logisticsTitle: "Direct Cold-Chain Process Journey",
@@ -341,7 +341,7 @@ export const translations: Record<"zh" | "en", TranslationSchema> = {
       phone: "Customer Support Hotlines",
       email: "B2B Business Email",
       hours: "Business Hours",
-      rights: "Di Bao Co., Ltd. (帝保股份有限公司) | Taro Research Labs Co., Ltd. (芋研所) All rights reserved. Organic Farming & Cold-Chain Processing Direct."
+      rights: "CryoLock All rights reserved. © 2026 CryoLock. Di Bao Co., Ltd. (帝保股份有限公司) Organic Farming & Cold-Chain Processing Direct."
     }
   }
 };

@@ -348,8 +348,8 @@ export default function AdvantageSection({ lang, t }: AdvantageSectionProps) {
                       <span className="font-bold mr-1">{lang === "zh" ? "⚠️ 傳統後廚痛點：" : "⚠️ Traditional Pain:"}</span>
                       {client.painpoint}
                     </p>
-                    <p className="text-xs text-slate-600 bg-purple-50/30 py-2 px-2.5 rounded-lg border border-purple-100/10 leading-relaxed">
-                      <span className="font-bold text-[#7E60B8] mr-1">{lang === "zh" ? "✓ 芋研所解決方案：" : "✓ Taro Research Solution:"}</span>
+                    <p className="text-xs text-slate-600 bg-blue-50/30 py-2 px-2.5 rounded-lg border border-blue-100/10 leading-relaxed">
+                      <span className="font-bold text-[#1E3A8A] mr-1">{lang === "zh" ? "✓ CryoLock 解決方案：" : "✓ CryoLock Solution:"}</span>
                       {client.solution}
                     </p>
                   </div>

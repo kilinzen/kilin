@@ -25,19 +25,30 @@ export default function Footer({ lang, t }: FooterProps) {
           {/* Column 1: Brand details */}
           <div className="md:col-span-2 space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="w-9 h-9 rounded-lg bg-purple-600 flex items-center justify-center text-white font-black text-sm">
-                研
+              <div className="w-9 h-9 rounded-lg bg-[#1E3A8A] flex items-center justify-center text-white font-black text-sm">
+                帝
               </div>
               <span className="text-lg font-black text-white tracking-tight">
-                芋研所 B2B 契作
+                CryoLock 極凍鎖鮮 | 帝保股份有限公司
               </span>
             </div>
             
             <p className="text-xs text-slate-400 leading-relaxed max-w-sm">
               {lang === "zh"
-                ? "我們是全台餐飲與烘焙集團的核心冷凍備配夥伴。座落於台中大甲產地深水契作，擁有專業無菌潔淨自有加工廠，為全台店家提供永續穩健的高口感食材支持。"
-                : "We are Taiwan's trusted flash-frozen agricultural processor. Supplying supreme, raw, pure taro paste recipes with premium contract farming."}
+                ? "專業商用原料供應。提供100%純芋頭泥，冷凍保存、解凍即用。品質穩定，標準化出品。"
+                : "Professional commercial ingredient supplier. Providing 100% pure taro paste, frozen storage, thaw and use. Stable quality, standardized production."}
             </p>
+            
+            <div className="mt-6 space-y-3.5 text-xs text-slate-300">
+              <div className="flex items-center space-x-3">
+                <span className="w-4 h-4 flex items-center justify-center text-slate-500 font-bold">👤</span>
+                <span className="font-mono">聯絡人：張承瑋</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <PhoneCall className="w-4 h-4 text-slate-500 flex-shrink-0" />
+                <span className="font-mono">聯絡方式：0901394309</span>
+              </div>
+            </div>
           </div>
 
           {/* Column 2: Nav Quick Links */}

@@ -5,7 +5,7 @@
 
 import React from "react";
 import { Language, TranslationSchema } from "../types";
-import { MapPin, PhoneCall, MailOpen, Activity, Compass } from "lucide-react";
+import { MapPin, PhoneCall, MailOpen, Activity, Compass, MessageCircle } from "lucide-react";
 
 interface FooterProps {
   lang: Language;
@@ -91,6 +91,17 @@ export default function Footer({ lang, t }: FooterProps) {
                   {lang === "zh" ? "線上 B2B 諮詢客服：" : "Online Support:"}
                 </span>
                 <span>24 小時（本站表單全年無休）</span>
+              </li>
+              <li className="pt-2">
+                <a 
+                  href="https://lin.ee/UBRd8jb" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center space-x-2 text-[#06C755] hover:text-[#05b34c] transition-colors font-semibold"
+                >
+                  <MessageCircle className="w-4 h-4" />
+                  <span>{lang === "zh" ? "LINE 官方客服" : "LINE Support"}</span>
+                </a>
               </li>
             </ul>
           </div>

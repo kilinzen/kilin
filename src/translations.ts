@@ -21,7 +21,7 @@ export const translations: Record<"zh" | "en", TranslationSchema> = {
       titleSub: "免削皮、解凍即用！專為商用茶飲烘焙打造的頂級芋泥",
       desc: "大甲契作產地直營的極致熟化芋泥，配方乾淨簡單，僅含大甲特級檳榔心芋頭、水與砂糖。搭配自有食品廠專業蒸汽熟化與低溫高速急速冷凍技術，鎖住鮮甜，保留天然芋香與細緻綿密的極致口感，絕無防腐劑、色素、或任何其他化學添加物。",
       specSummary: "安心規格：純熟化芋泥（無防腐劑、色素化學添加） · 1kg 保鮮袋裝 · 20包/箱",
-      ctaPrimary: "免費申請 1kg 樣品",
+      ctaPrimary: "免費申請樣品",
       ctaSecondary: "檢視產品詳細規格",
       originLabel: "芋研所契約農作檳榔心芋",
       originDesc: "大甲特有的肥沃黑黏土與純淨水源，孕育出澱粉質高、質地細緻綿密的檳榔心芋。我們深耕在地，深入契作農地，從源頭確保每一批原料都達到食品加工的最高標準。",
@@ -151,7 +151,7 @@ export const translations: Record<"zh" | "en", TranslationSchema> = {
     },
     contact: {
       title: "商業合作洽詢 & 樣品免費索取",
-      sub: "台灣各縣市皆有全程低溫冷鏈物流配送。歡迎全台手搖飲、連鎖餐飲、麵包烘焙主廚索取 1kg 完整樣品包測試！",
+      sub: "台灣各縣市皆有全程低溫冷鏈物流配送。歡迎全台手搖飲、連鎖餐飲、麵包烘焙主廚索取完整樣品包測試！",
       formName: "聯絡人姓名",
       formCompany: "公司/店家/品牌名稱",
       formType: "產業類別",
@@ -164,7 +164,7 @@ export const translations: Record<"zh" | "en", TranslationSchema> = {
       success: "申請成功！我們專業的 B2B 業務專員將會在 24 小時內與您聯繫，並為您郵寄測試樣品包。謝謝您的支持！",
       error: "送出失敗，請檢查資料後再試",
       sampleReq: "樣品索取意願",
-      sampleCheckbox: "我需要索取一份 1kg 免費試用樣品包 (運費由我們全額吸收)"
+      sampleCheckbox: "我需要索取一份免費試用樣品包 (運費由我們全額吸收)"
     },
     footer: {
       factoryAddress: "工廠地址",
@@ -190,7 +190,7 @@ export const translations: Record<"zh" | "en", TranslationSchema> = {
       titleSub: "No peeling, thaw & use! Ultimate commercial taro recipe solution for wholesale vendors",
       desc: "Delightfully pure taro paste made with only Dajia taro, water, and sugar—absolutely zero chemical colors, starches, or preservatives. Sourced exclusively from premium Dajia taro in Taichung and processed in our certified facility using low-temperature flash freezing to lock in pure natural aroma.",
       specSummary: "Spec: Cooked Taro Paste (Zero Preservative / Starch Fillers) · 1.0 kg/bag · 20 bags/carton",
-      ctaPrimary: "Request Free 1kg Sample",
+      ctaPrimary: "Request Free Sample",
       ctaSecondary: "Get Bulk Wholesale Quotes",
       originLabel: "100% Dajia Betel Nut Taro",
       originDesc: "Formed by premium alluvial soil and organic water resources in Dajia, the Betel Nut Taro variety yields the highest starch density and most fragrant creamy notes. We work with dynamic local contract farms ensuring crop premium standards.",
@@ -320,7 +320,7 @@ export const translations: Record<"zh" | "en", TranslationSchema> = {
     },
     contact: {
       title: "B2B Sales Support & Free Samples",
-      sub: "We provide wholesale low-temperature cold chain logistics throughout Taiwan. Beverage managers and baking chefs are welcome to apply for a free 1kg testing sample pouch!",
+      sub: "We provide wholesale low-temperature cold chain logistics throughout Taiwan. Beverage managers and baking chefs are welcome to apply for a free testing sample pouch!",
       formName: "Full Name",
       formCompany: "Company / Shop / Brand Name",
       formType: "Industry Category",
@@ -330,10 +330,10 @@ export const translations: Record<"zh" | "en", TranslationSchema> = {
       formMsg: "Estimated daily requirements or sample testing specifications",
       submit: "Submit and Claim Sample",
       submitting: "Submitting inquiry...",
-      success: "Inquiry Sent! A representative will connect with you in 24 hours to organize your free 1kg sample shipment. Thank you!",
+      success: "Inquiry Sent! A representative will connect with you in 24 hours to organize your free sample shipment. Thank you!",
       error: "Error sending, please re-check your form",
       sampleReq: "Sample Request Opt-In",
-      sampleCheckbox: "I would like to request a FREE 1kg trial sample package (Shipping fully covered by us)."
+      sampleCheckbox: "I would like to request a FREE trial sample package (Shipping fully covered by us)."
     },
     footer: {
       factoryAddress: "Factory Address",

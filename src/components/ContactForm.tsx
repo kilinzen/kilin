@@ -5,7 +5,7 @@
 
 import React, { useState } from "react";
 import { Language, TranslationSchema } from "../types";
-import { Sparkles, Send, CheckCircle, Mail, Phone, MapPin, Building2 } from "lucide-react";
+import { Sparkles, Send, CheckCircle, Mail, Phone, MapPin, Building2, MessageCircle } from "lucide-react";
 
 interface ContactFormProps {
   lang: Language;
@@ -52,6 +52,26 @@ export default function ContactForm({ lang, t }: ContactFormProps) {
     setIsLoading(true);
     setErrorMessage("");
 
+    // Construct email body
+    const subject = encodeURIComponent(
+      lang === "zh" 
+        ? `合作洽詢與樣品申請 - ${formData.company}` 
+        : `B2B Inquiry & Sample Request - ${formData.company}`
+    );
+    
+    const body = encodeURIComponent(
+      (lang === "zh" ? "姓名: " : "Name: ") + formData.name + "\n" +
+      (lang === "zh" ? "公司/店家: " : "Company: ") + formData.company + "\n" +
+      (lang === "zh" ? "聯絡電話: " : "Phone: ") + formData.phone + "\n" +
+      (lang === "zh" ? "電子信箱: " : "Email: ") + formData.email + "\n" +
+      (lang === "zh" ? "產業類別: " : "Industry: ") + (formData.companyType || "-") + "\n" +
+      (lang === "zh" ? "需求/訊息: " : "Message: ") + (formData.message || "-") + "\n" +
+      (lang === "zh" ? "索取免費樣品: " : "Request Free Sample: ") + (formData.isSampleRequested ? (lang === "zh" ? "是 (Yes)" : "Yes") : (lang === "zh" ? "否 (No)" : "No"))
+    );
+
+    const mailtoLink = `mailto:kilinzen@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = mailtoLink;
+
     // Simulate backend API persistence delay
     setTimeout(() => {
       setIsLoading(false);
@@ -88,47 +108,43 @@ export default function ContactForm({ lang, t }: ContactFormProps) {
               </p>
             </div>
 
-            {/* Quick contact direct access details */}
-            <div className="bg-white p-6 rounded-2xl border border-slate-200/50 shadow-sm space-y-6">
-              <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest block font-mono border-b border-slate-100 pb-3">
-                {lang === "zh" ? "B2B 批發採購諮詢處" : "B2B Headquarters Business Desk"}
-              </h4>
-
-              <div className="flex items-start space-x-3.5">
-                <div className="w-9 h-9 rounded-lg bg-purple-100/60 flex items-center justify-center text-purple-700 flex-shrink-0">
-                  <Phone className="w-4 h-4" />
-                </div>
-                <div>
-                  <span className="text-[10px] text-slate-400 block font-bold font-mono tracking-wider uppercase">TEL PHONE</span>
-                  <span className="text-sm font-bold text-slate-800 tracking-tight">04-2688-6688（專屬客戶服務熱線）</span>
-                </div>
+            {/* LINE Official Account Contact */}
+            <div className="bg-white p-6 rounded-2xl border border-[#06C755]/20 shadow-sm flex flex-col sm:flex-row items-center sm:items-start gap-6 relative overflow-hidden group hover:border-[#06C755]/40 transition-colors">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-[#06C755]/5 rounded-bl-full -mr-8 -mt-8 z-0"></div>
+              
+              <div className="w-28 h-28 sm:w-32 sm:h-32 flex-shrink-0 bg-white p-2 rounded-xl border border-slate-100 shadow-sm z-10">
+                <img 
+                  src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://lin.ee/UBRd8jb" 
+                  alt="LINE Official Account QR Code" 
+                  className="w-full h-full object-contain"
+                />
               </div>
-
-              <div className="flex items-start space-x-3.5">
-                <div className="w-9 h-9 rounded-lg bg-purple-100/60 flex items-center justify-center text-purple-700 flex-shrink-0">
-                  <Mail className="w-4 h-4" />
-                </div>
-                <div>
-                  <span className="text-[10px] text-slate-400 block font-bold font-mono tracking-wider uppercase">EMAIL ADDR</span>
-                  <span className="text-sm font-bold text-slate-800 tracking-tight">b2b@tarolab.com.tw</span>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-3.5">
-                <div className="w-9 h-9 rounded-lg bg-purple-100/60 flex items-center justify-center text-purple-700 flex-shrink-0">
-                  <MapPin className="w-4 h-4" />
-                </div>
-                <div>
-                  <span className="text-[10px] text-slate-400 block font-bold font-mono tracking-wider uppercase">FACTORY LOC</span>
-                  <span className="text-xs font-bold text-slate-800 tracking-tight md:truncate block">台灣台中市大甲區頂安路芋頭科技工業區 88 號</span>
-                </div>
+              
+              <div className="space-y-3 text-center sm:text-left z-10 flex-1">
+                <h4 className="text-[#06C755] font-bold text-lg flex items-center justify-center sm:justify-start gap-2">
+                  <MessageCircle className="w-5 h-5" />
+                  {lang === "zh" ? "加入 LINE 官方好友" : "Add LINE Official Account"}
+                </h4>
+                <p className="text-sm text-slate-600 leading-relaxed">
+                  {lang === "zh" 
+                    ? "掃描 QR Code 或點擊下方按鈕，即可加入我們的 LINE 官方帳號，隨時為您提供專屬諮詢服務。" 
+                    : "Scan the QR Code or click the button below to join our LINE Official Account for personalized support."}
+                </p>
+                <a 
+                  href="https://lin.ee/UBRd8jb" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center px-6 py-2.5 bg-[#06C755] hover:bg-[#05b34c] text-white text-sm font-bold rounded-lg transition-colors shadow-sm"
+                >
+                  {lang === "zh" ? "點擊加入好友" : "Click to Add Friend"}
+                </a>
               </div>
             </div>
 
             {/* Micro warning */}
             <div className="text-xs text-slate-400 leading-relaxed lg:max-w-sm">
               {lang === "zh"
-                ? "* 每位烘焙主廚或飲品店主僅限索取一次 1kg 樣品包。非餐飲業者或私人名義恕不寄送，申請後專員會致電確認商標或統編，感謝體諒。"
+                ? "* 每位烘焙主廚或飲品店主僅限索取一次樣品包。非餐飲業者或私人名義恕不寄送，申請後專員會致電確認商標或統編，感謝體諒。"
                 : "* Sample distributions are exclusive to licensed cafe owners or bakery workshops. Verified business ID required."}
             </div>
           </div>

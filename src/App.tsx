@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Language } from "./types";
 import { translations } from "./translations";
 import Header from "./components/Header";
@@ -18,6 +18,18 @@ import Footer from "./components/Footer";
 export default function App() {
   const [lang, setLang] = useState<Language>("zh");
   const t = translations[lang];
+
+  useEffect(() => {
+    if (window.location.hash) {
+      const id = window.location.hash.substring(1);
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    }
+  }, []);
 
   return (
     <div className="min-h-screen bg-white text-slate-800 font-sans antialiased text-slate-900 selection:bg-purple-100 selection:text-purple-900 overflow-x-hidden w-full">
